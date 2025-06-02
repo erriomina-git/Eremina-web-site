@@ -409,3 +409,9 @@ textarea {
         font-size: 140%;
     }
 }
+
+ @media (min-width: 1100px) and (max-width: 1200px) {
+        .header{
+                left: 14%;
+            }
+        }
