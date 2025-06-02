@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy birthday</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <img src="./images/logo.PNG" alt="45" class="header_logo">
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li><a href="#1">ГЛАВНАЯ</a></li>
+                    <li><a href="#2">ФАКТЫ</a></li>
+                    <li><a href="#3">ИМЯ</a></li>
+                    <li><a href="#4">ФОТО</a></li>
+                    <li><a href="#5">ЗВЕЗДЫ</a></li>
+                    <li><a href="#6">ПОЖЕЛАНИЯ</a></li>
+                    <li><a href="#7">ПОЗДРАВИТЬ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="1" class="welcome">
+            <div class="container">
+                <h1 class="welcome_title">С ЮБИЛЕЕМ!</h1>
+                <div class="p welcome_poem">Пусть будешь ты всегда счастливой,<br>
+                    Шутливой, яркой и красивой.<br>
+                    Самой любить и быть любимой,<br>
+                    Всегда во всём неповторимой!<br>
+                    <br>
+                    Чтоб желания сбывались,<br>
+                    Исполнялись все мечты.<br>
+                    Звезды с неба улыбались,<br>
+                    Улыбалась им и ты!
+                </div>
+            </div>
+        </section>
+
+        <section id="2" class="facts_list">
+            <div class="container">
+                <div class="facts_list_card">
+                    <img src="./images/facts-1.JPEG" alt="" class="facts_list_img">
+                    <div class="text_wrapper">
+                        <p class="title_card">Спортивная</p>
+                        <p class="desc">На лыжах ходишь лучше, чем на каблуках!</p>
+                    </div>
+                </div>
+
+                <div class="facts_list_card">
+                    <img src="./images/facts-2.JPEG" alt="" class="facts_list_img">
+                    <div class="text_wrapper">
+                        <p class="title_card">Ухоженная</p>
+                        <p class="desc">Для того чтобы быть самой красивой, готова идти на жертвы!</p>
+                    </div>
+                </div>
+
+                <div class="facts_list_card">
+                    <img src="./images/facts-3.JPEG" alt="" class="facts_list_img">
+                    <div class="text_wrapper">
+                        <p class="title_card">Всемогучая</p>
+                        <p class="desc">Все прекрасно знают, что ты можешь всё!</p>
+                    </div>
+                </div>
+
+                <div class="facts_list_card">
+                    <img src="./images/facts-4.JPEG" alt="" class="facts_list_img">
+                    <div class="text_wrapper">
+                        <p class="title_card">Релаксирующая</p>
+                        <p class="desc">Если отдыхать, то тоже красиво!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr color="white" size="5" width="100%">
+        <section id="3"class="name">
+            <div class="container">
+                <p class="name_text"><span>Н</span> еподражаемая<br>
+                    <span>А</span> ртистичная<br>
+                    <span>Т</span> рудолюбивая<br>
+                    <span>А</span> мбициозная<br>
+                    <span>Ш</span> икарная<br>
+                    <span>А</span> х, какая женщина!</p>;
+                <img src="./images/natalia.PNG" alt="" class="natalia">;
+            </div>
+        </section>
+        <hr color="white" size="5" width="100%">
+        <section id="4" class="photos">
+            <div class="container">
+                <img src="./images/foto-1.JPEG" alt="" class="photos_four">;
+                <img src="./images/foto-2.JPEG" alt="" class="photos_four">;
+                <img src="./images/foto-3.JPEG" alt="" class="photos_four">;
+                <img src="./images/foto-4.JPEG" alt="" class="photos_four">;
+            </div>
+            <img src="./images/logo.PNG" alt="45" class="photos_logo">
+        </section>
+
+        <section id="5" class="stars">
+            <div class="container">
+                <p class="star_text_left">ЗВЕЗДНОЕ НЕБО</p>;
+                <img src="./images/star_sky.PNG" alt="" class="stars_sky">;
+                <p class="star_text_right">В МОМЕНТ ТВОЕГО РОЖДЕНИЯ</p>;
+            </div>
+        </section>
+
+        <div id="6" class="wish">
+                <div class="title_wish">
+                    <p class="title_wish_text">МЫ ТЕБЕ ЖЕЛАЕМ</p>
+                </div>
+        </div>
+
+        <section class="sea">
+            <div class="container">..
+                <p class="sea_text_photo">Доходы пусть всегда растут,<br>В семье пусть любят, берегут.</p>
+            </div>
+            <p class="sea_text">И всем невзгодам вопреки,<br>
+                В душе сияют огоньки!<br>
+                <br>
+                Здоровья крепкого на годы,<br>
+                Всегда отличнейшей погоды<br>
+                И самых правильных решений.<br>
+                Добра и дружбы! С днем рожденья!</p>
+        </section>
+
+        <div id="7" class="wish">
+                <div class="title_wish">
+                    <p class="title_wish_text">ХОЧЕШЬ ПОЗДРАВИТЬ?</p>
+                </div>
+        </div>
+    </main>
+
+    <section class="block_form">
+        <form id="regForm" action="/registration" method="post" novalidate data-js-form>
+        <p class="field">
+        <label class="field__label" for="login">Имя</label>
+        <input
+            class="field__control"
+            id="login"
+            name="login"
+            required
+            minlength="3"
+            maxlength="12"
+            aria-errormessage="login-errors"
+        />
+        <span class="field__errors" id="login-errors" data-js-form-field-errors></span>
+        </p>
+        <p class="field">
+        <label class="field__label" for="password">Пароль</label>
+        <input
+            class="field__control"
+            id="password"
+            name="password"
+            type="text"
+            required
+            minlength="8"
+            maxlength="16"
+            pattern="(?=.*[а-я])(?=.*[А-Я]).{8,16}"
+            title="Пароль должен быть длиной от 8 до 16 символов, включать как минимум одну цифру, одну букву в нижнем и одну букву в верхнем регистре"
+            aria-errormessage="password-errors"
+        />
+        <span class="field__errors" id="password-errors" data-js-form-field-errors></span>
+        </p>
+        <p class="field">
+        <label class="field__label" for="about">Ваше поздравление</label>
+        <textarea class="field__control" id="about" name="about"></textarea>
+        </p>
+        <fieldset class="radios">
+        <legend class="radios__legend">Ваш пол</legend>
+
+        <input
+            class="radios__control"
+            id="male"
+            name="gender"
+            type="radio"
+            value="Мужской"
+            required
+            aria-errormessage="password-errors"
+        />
+        <label class="radios__label" for="male">Мужской</label>
+
+        <input
+            class="radios__control"
+            id="female"
+            name="gender"
+            type="radio"
+            value="Женский"
+            required
+            aria-errormessage="password-errors"
+        />
+        <label class="radios__label" for="female">Женский</label>
+
+        <span class="field__errors" id="gender-errors" data-js-form-field-errors></span>
+        </fieldset>
+        <div class="field checkbox">
+        <input
+            class="checkbox__control"
+            id="agreement"
+            name="agreement"
+            type="checkbox"
+            required
+            aria-errormessage="agreement-errors"
+        />
+        <label class="field__label checkbox__label" for="agreement">Поздравлять каждый год</label>
+        <span class="field__errors" id="agreement-errors" data-js-form-field-errors></span>
+        </div>
+        <button class="btn" type="submit">ПОЗДРАВИТЬ</button>
+    </form>
+</section>
+</body>
+</html>

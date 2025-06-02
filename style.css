@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Gabriela", serif;
+    background-color: #2D1212;
+}
+
+.container{
+    padding-block: 10px;
+    max-width: 835px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 15px;
+}
+
+.welcome{
+    padding-top: 62px;
+    background-image: url("./images/welcome.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 155px;
+}
+
+.header_logo{
+    width: 50px;
+    height: 42px;
+    margin-right: 50px;
+}
+
+.header{
+    position: fixed;
+    background: #2d121242;
+    left: 25%;
+}
+.header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_list{
+    display: flex;
+    gap: 40px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+.p{
+    font-size: 150%;
+    color: white;
+}
+
+.welcome_title{
+    color: #EFB42E;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+.facts_list_img{
+    max-width: 100%;
+}
+
+.title_card{
+    font-size: 110%;
+    color: white;
+}
+
+.desc{
+     font-family: "Roboto", sans-serif;
+     opacity: 80%;
+     color: white;
+     margin-bottom: 13px;
+}
+.facts_list_card{
+    max-width: 262px;
+    max-width: 190px;
+    overflow: hidden;
+    object-fit: cover;
+    background: #331524;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.facts_list .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px 15px;
+    padding: 40px;
+}
+
+.text_wrapper{
+    padding: 5px 20px;
+}
+
+span{
+    color: #EFB42E;
+    font-size: 200%;
+}
+
+.name_text{
+    font-size: 150%;
+    color: white;
+}
+
+.natalia{
+    max-width: 60%;
+    padding-top: 40px;
+}
+
+.name .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.photos_four{
+    max-width: 45%;
+}
+
+.photos .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 10px;
+}
+
+.photos_logo{
+    width: 100px;
+    height: 84px;
+    position: absolute;
+    top: 40%;
+    left: 45.4%;
+}
+
+.photos{
+    position: relative;
+    padding-block: 5%;
+    
+}
+
+.stars .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars_sky{
+    max-width: 450px;
+    padding-bottom: 5%;
+}
+
+.star_text_left{
+    color:white;
+    font-size: 150%;
+    padding-right: 7%;
+}
+
+.star_text_right{
+    color: #EFB42E;
+    font-size: 150%;
+    text-align: right;
+}
+
+.wish{
+    background: #331524;
+    display: flex;
+    justify-content: center;
+}
+
+.title_wish_text{
+    color: #EFB42E;
+    font-size: 200%;
+    text-align: center;
+}
+
+.sea{
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+.sea .container{
+    background-image: url("./images/last_foto.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 295px;
+    position: relative;
+}
+
+.sea_text_photo{
+    color:white;
+    font-size: 150%;
+    position: absolute;
+    top: 8%;
+    left: 30%;
+}
+
+.sea_text{
+    color:white;
+    font-size: 150%;
+    text-align: center;
+}
+
+.block_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2em;
+  color: #331524;
+  max-width: 300px;
+  margin: 30px;
+  padding: 20px;
+  border: 6px solid #331524;
+  background-color: white;
+  border-radius: 15px;
+}
+
+input,
+button,
+fieldset,
+select,
+textarea {
+  border: 3px solid #EFB42E;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+
+:is(
+  input:not(.radios__control, .checkbox__control),
+  button,
+  textarea
+):is(:hover, :focus),
+:is(
+  .radios__label,
+  .checkbox__label
+):hover {
+  background-color: rgba(192, 130, 154, 0.669);
+}
+
+:is(
+  input,
+  button,
+  select,
+  textarea
+):focus {
+  outline: none;
+  border-color: slateblue;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-block: 0;
+}
+
+.field:has([required]) .field__label::after,
+.radios:has([required]) .radios__legend::after {
+  content: "*";
+  padding-inline: 0.25em;
+  color: #331524;
+}
+
+.field__errors {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4em;
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  color: red;
+  line-height: 1.25;
+}
+
+.field__errors:empty {
+  display: none;
+}
+
+.city-selection {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.radios {
+  padding: 10px;
+}
+
+.radios:has(:focus) {
+  border-color: slateblue;
+}
+
+.radios__control {
+  margin-right: 0;
+}
+
+.radios__control:first-of-type {
+  margin-left: 0;
+}
+
+.radios__label,
+.checkbox__label {
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.radios__control:focus-visible + .radios__label,
+.radios__control:focus[aria-invalid="true"] + .radios__label,
+.checkbox__control:focus-visible + .checkbox__label {
+  border-color: slateblue;
+}
+
+.checkbox {
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 0.25em;
+}
+
+.checkbox .field__error {
+  flex-basis: 100%;
+}
+
+.btn{
+    background: #331524;
+    color: white;
+    height: 35px;
+    font-family: "Gabriela", serif;;
+}
+
+.welcome_title {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .welcome{
+        width: 80%;
+        background: #2D1212;
+    }
+    .header{
+        font-size: small;
+        left: -13%;
+    }
+
+    .stars_sky{
+        width: 43%;
+    }
+
+    .star_text_left{
+        font-size: 110%;
+    }
+    .star_text_right{
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .welcome{
+        width: 80%;
+        background: #2D1212;
+    }
+    .header{
+        font-size: small;
+        left: 9%;
+    }
+
+    .stars_sky{
+        width: 43%;
+    }
+
+    .star_text_left{
+        font-size: 140%;
+    }
+    .star_text_right{
+        font-size: 140%;
+    }
+}
